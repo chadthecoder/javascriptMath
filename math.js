@@ -8,7 +8,7 @@ class Point
     method_1() {  }
 };
 
-class Math
+class Maths
 {
     constructor()
     {

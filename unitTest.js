@@ -7,12 +7,13 @@ function test()
     alert("testy");
 }
 
-function submit(oneX, oneY, twoX, twoY)
+function submit(xOne, xTwo, yOne, yTwo)
 {
-    let one = new Point(oneX.value, oneY.value);
-    let two = new Point(twoX.value, twoY.value);
-    let testM = new Math();
+    let one = new Point(xOne.value, xTwo.value);
+    let two = new Point(yOne.value, yTwo.value);
+    let testM = new Maths();
     let ans = testM.getSlope(one, two);
     document.getElementById("testy").innerHTML = "Answer: " + ans.toString();
+    document.getElementById("demo").innerHTML =  Math.sign(ans);
     return ans;
 }
