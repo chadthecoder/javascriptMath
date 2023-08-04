@@ -21,4 +21,4 @@ class Math
     }
 };
 
-module.exports = Point, Math;
+//export {Point, Math};

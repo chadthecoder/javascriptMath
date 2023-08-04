@@ -1,5 +1,5 @@
-const Point = require('./math.js');
-const Math = require('./math.js');
+//const Point = require('./math.js');
+//import { Point, Math } from "./math.js";
 
 function test()
 {
@@ -9,11 +9,10 @@ function test()
 
 function submit(oneX, oneY, twoX, twoY)
 {
-    let one = new Point(oneX, oneY);
-    let two = new Point(twoX, twoY);
+    let one = new Point(oneX.value, oneY.value);
+    let two = new Point(twoX.value, twoY.value);
     let testM = new Math();
     let ans = testM.getSlope(one, two);
-    document.getElementById("testy").innerHTML = "Hello World";
-    alert("HI");
+    document.getElementById("testy").innerHTML = "Answer: " + ans.toString();
     return ans;
 }
