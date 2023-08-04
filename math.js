@@ -5,7 +5,11 @@ class Point
         this.x = x;
         this.y = y;
     }
-    method_1() {  }
+    getSlope(point2) //takes two points
+    {
+        let ans = (point2.y-this.y)/(point2.x-this.x)
+        return ans;
+    }
 };
 
 class Maths
@@ -14,11 +18,7 @@ class Maths
     {
         //help?
     }
-    getSlope(one, two) //takes two points
-    {
-        let ans = (two.y-one.y)/(two.x-one.x)
-        return ans;
-    }
+    method(){}
 };
 
 //export {Point, Math};
